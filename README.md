@@ -1,4 +1,8 @@
-# React + Vite
+# Lumbini Labs
+
+The official website for [lumbinilabs.com](https://lumbinilabs.com).
+
+Lumbini Labs designs websites, software, and AI-powered systems for growing businesses.
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
