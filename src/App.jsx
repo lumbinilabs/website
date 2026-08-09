@@ -30,7 +30,7 @@ function App() {
           <a href="#process">Process</a>
           <a href="#origin">Our name</a>
         </nav>
-        <a className="nav-cta" href="mailto:hello@lumbinilabs.com">Start a project <Arrow /></a>
+        <a className="nav-cta" href="mailto:hello@lumbinilabs.com"><span className="nav-cta-label">Start a project</span> <Arrow /></a>
       </header>
 
       <main>
