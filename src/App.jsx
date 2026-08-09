@@ -28,6 +28,7 @@ function App() {
         <nav aria-label="Main navigation">
           <a href="#services">Services</a>
           <a href="#work">Work</a>
+          <a href="#founder">Founder</a>
           <a href="#process">Process</a>
           <a href="#origin">Our name</a>
         </nav>
@@ -127,6 +128,23 @@ function App() {
               <span>Origin</span><i />
               <span>Clarity</span><i />
               <span>Impact</span>
+            </div>
+          </div>
+        </section>
+
+        <section className="founder section" id="founder">
+          <div className="founder-card" aria-hidden="true">
+            <span className="founder-initials">RN</span>
+            <span className="founder-card-label">Independent studio<br />Direct collaboration</span>
+            <span className="founder-card-mark">✦</span>
+          </div>
+          <div className="founder-copy">
+            <div className="kicker">Meet the founder</div>
+            <h2>Small by design.<br />Invested in every detail.</h2>
+            <p>Lumbini Labs is an independent technology studio founded by Rajesh Neupane. Every project is led directly by Rajesh—from the first conversation and product thinking through design, development, and launch.</p>
+            <p>This hands-on approach keeps communication clear, decisions fast, and the final product closely connected to what your business actually needs.</p>
+            <div className="founder-focus">
+              <span>Strategy</span><span>Design</span><span>Development</span>
             </div>
           </div>
         </section>

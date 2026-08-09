@@ -84,6 +84,20 @@ h1 em, .closing em { font-weight: 400; color: var(--green); }
 .origin-copy > p { max-width: 470px; margin: 0; color: #667069; font-size: 15px; line-height: 1.75; }
 .origin-values { display: flex; align-items: center; gap: 16px; margin-top: 45px; text-transform: uppercase; letter-spacing: 1.6px; font-size: 9px; color: var(--green); }
 .origin-values i { width: 4px; height: 4px; border-radius: 50%; background: var(--lime); }
+.founder { display: grid; grid-template-columns: .82fr 1.18fr; gap: 110px; align-items: center; border-bottom: 1px solid var(--line); }
+.founder-card { min-height: 475px; padding: 42px; position: relative; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; color: white; background: var(--green); }
+.founder-card:before, .founder-card:after { content: ''; position: absolute; border: 1px solid rgba(214,239,116,.34); border-radius: 50%; }
+.founder-card:before { width: 340px; height: 340px; right: -140px; top: -105px; }
+.founder-card:after { width: 210px; height: 210px; right: -60px; top: -35px; }
+.founder-initials { position: relative; z-index: 1; font: 500 clamp(86px,10vw,142px)/.8 'Manrope'; letter-spacing: -9px; color: var(--lime); }
+.founder-card-label { font-size: 10px; line-height: 1.6; text-transform: uppercase; letter-spacing: 1.5px; color: rgba(255,255,255,.62); }
+.founder-card-mark { position: absolute; right: 38px; bottom: 35px; color: var(--lime); font-size: 24px; }
+.founder-copy { max-width: 590px; }
+.founder-copy .kicker { margin-bottom: 35px; }
+.founder-copy h2 { margin: 0 0 32px; font: 500 clamp(40px,4.4vw,62px)/1.03 'Manrope'; letter-spacing: -3px; }
+.founder-copy > p { max-width: 550px; margin: 0 0 17px; color: #667069; font-size: 14px; line-height: 1.72; }
+.founder-focus { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 35px; }
+.founder-focus span { padding: 8px 12px; border: 1px solid var(--line); color: var(--green); font-size: 9px; text-transform: uppercase; letter-spacing: 1px; }
 .process { display: grid; grid-template-columns: .8fr 1.2fr; gap: 90px; }
 .process-heading .kicker { margin-bottom: 36px; }
 .steps { border-top: 1px solid var(--line); }
@@ -110,6 +124,7 @@ footer p { margin: 0; text-align: center; color: #667069; font-size: 12px; }
   .work-heading { grid-template-columns: 1fr; gap: 22px; margin-bottom: 52px; }.work-heading h2 { letter-spacing: -2.5px; }.work-heading > p { max-width: 520px; }.project-list { gap: 78px; }.project, .project-reverse { grid-template-columns: 1fr; gap: 32px; }.project-reverse .project-image, .project-reverse .project-details { order: initial; }.project-details { max-width: 600px; }.project-details h3 { margin-block: 18px 15px; }.project-tags { margin-top: 24px; }
   .statement { min-height: 500px; padding: 90px 20px; }.statement p { letter-spacing: -3px; }
   .origin { grid-template-columns: 1fr; gap: 65px; }.origin-art { width: 100%; min-height: 390px; }.garden-rings { width: min(240px, 68vw); height: min(240px, 68vw); }.ring-inner { width: 56%; height: 56%; }.path-horizontal { width: min(310px, 88vw); }.path-vertical { height: 310px; }.origin-copy h2 { letter-spacing: -2px; }.origin-copy > p { font-size: 14px; }
+  .founder { grid-template-columns: 1fr; gap: 58px; }.founder-card { min-height: 390px; }.founder-copy h2 { letter-spacing: -2px; }
   .process { grid-template-columns: 1fr; gap: 55px; }.step { grid-template-columns: 35px 90px 1fr; gap: 10px; }
   .closing { min-height: 520px; padding: 70px 25px; flex-direction: column; align-items: flex-start; }.closing h2 { letter-spacing: -3px; }.circle-link { width: 150px; height: 150px; padding: 34px 28px; align-self: flex-end; }
   footer { padding: 40px 20px; grid-template-columns: 1fr 1fr; gap: 35px; }footer p { display: none; }.footer-links { flex-direction: column; gap: 8px; text-align: right; }
@@ -123,6 +138,7 @@ footer p { margin: 0; text-align: center; color: #667069; font-size: 12px; }
   .statement { min-height: 440px; padding-block: 76px; }.statement:before { top: 45px; font-size: 23px; }.statement p { font-size: 44px; line-height: 1.08; letter-spacing: -2.5px; }
   .origin-art { min-height: 330px; }.origin-art:before { inset: 14px; }.origin-coordinates { left: 28px; bottom: 26px; }.path-vertical { height: 270px; }
   .origin-values { gap: 11px; margin-top: 34px; letter-spacing: 1.2px; }
+  .founder { gap: 48px; }.founder-card { min-height: 335px; padding: 30px; }.founder-initials { font-size: 92px; }.founder-card-mark { right: 28px; bottom: 27px; }.founder-copy h2 { font-size: 39px; line-height: 1.06; }.founder-copy > p { font-size: 13px; }
   .process { gap: 44px; }.step { grid-template-columns: 30px 1fr; gap: 8px 12px; padding: 25px 0; }.step h3 { font-size: 17px; }.step p { grid-column: 2; }
   .closing { min-height: 480px; padding: 62px 20px; }.closing h2 { font-size: 49px; line-height: 1.04; letter-spacing: -2.5px; }.circle-link { width: 142px; height: 142px; padding: 31px 26px; }
   footer { min-height: 210px; grid-template-columns: 1fr; gap: 26px; }.footer-brand { justify-self: start; }.footer-links { justify-self: start; text-align: left; }
