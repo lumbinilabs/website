@@ -96,7 +96,7 @@ function App() {
               <div className="project-details">
                 <span className="project-index">02 / Product</span>
                 <h3>NCLEX Personal Coach</h3>
-                <p>A focused study workspace bringing question banks, CSV imports, practice sessions, notes, flagged questions, progress statistics, and account sync into one place.</p>
+                <p>A focused study workspace bringing a categorized shared question bank, CSV imports, practice sessions, notes, flagged questions, progress statistics, and account sync into one place.</p>
                 <div className="project-tags"><span>Product design</span><span>Learning platform</span><span>Data dashboard</span></div>
               </div>
             </article>
