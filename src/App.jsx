@@ -27,6 +27,7 @@ function App() {
         </a>
         <nav aria-label="Main navigation">
           <a href="#services">Services</a>
+          <a href="#work">Work</a>
           <a href="#process">Process</a>
           <a href="#origin">Our name</a>
         </nav>
@@ -65,6 +66,40 @@ function App() {
                 <span className="service-tag">{service.tag}</span>
               </article>
             ))}
+          </div>
+        </section>
+
+        <section className="work section" id="work">
+          <div className="work-heading">
+            <div className="kicker">Selected work</div>
+            <h2>Ideas made useful.</h2>
+            <p>Two very different businesses. The same focus: make the experience clearer, more capable, and easier to act on.</p>
+          </div>
+          <div className="project-list">
+            <article className="project project-featured">
+              <a className="project-image" href="https://7r-tattooz.vercel.app" target="_blank" rel="noreferrer" aria-label="View the live 7R Tattooz website">
+                <img src="/projects/7r-tattooz.png" alt="7R Tattooz website showing its tattoo styles section" />
+                <span className="project-open">View live <Arrow /></span>
+              </a>
+              <div className="project-details">
+                <span className="project-index">01 / Client website</span>
+                <h3>7R Tattooz</h3>
+                <p>A conversion-focused studio website pairing a bold editorial identity with artist profiles, selected work, tattoo styles, testimonials, location details, and appointment requests.</p>
+                <div className="project-tags"><span>Brand experience</span><span>Lead generation</span><span>Booking flow</span></div>
+              </div>
+            </article>
+            <article className="project project-reverse">
+              <a className="project-image" href="https://nclexpersonalcoach.vercel.app" target="_blank" rel="noreferrer" aria-label="View the live NCLEX Personal Coach application">
+                <img src="/projects/nclex-coach.png" alt="NCLEX Personal Coach study dashboard" />
+                <span className="project-open">View live <Arrow /></span>
+              </a>
+              <div className="project-details">
+                <span className="project-index">02 / Product</span>
+                <h3>NCLEX Personal Coach</h3>
+                <p>A focused study workspace bringing question banks, CSV imports, practice sessions, notes, flagged questions, progress statistics, and account sync into one place.</p>
+                <div className="project-tags"><span>Product design</span><span>Learning platform</span><span>Data dashboard</span></div>
+              </div>
+            </article>
           </div>
         </section>
 

@@ -42,6 +42,24 @@ h1 em, .closing em { font-weight: 400; color: var(--green); }
 .service h3 { font: 500 25px 'Manrope'; letter-spacing: -1px; margin: 0 0 10px; }
 .service p { margin: 0; max-width: 520px; color: #667069; font-size: 14px; line-height: 1.55; }
 .service-tag { justify-self: end; color: #667069; font-size: 11px; }
+.work { border-top: 1px solid var(--line); }
+.work-heading { display: grid; grid-template-columns: .65fr 1.4fr .7fr; gap: 45px; align-items: start; margin-bottom: 78px; }
+.work-heading h2 { margin: 0; font: 500 clamp(42px,4.8vw,68px)/1 'Manrope'; letter-spacing: -3.5px; }
+.work-heading > p { margin: 0; padding-top: 8px; color: #667069; font-size: 14px; line-height: 1.65; }
+.project-list { display: grid; gap: 115px; }
+.project { display: grid; grid-template-columns: 1.45fr .72fr; gap: 64px; align-items: center; }
+.project-reverse { grid-template-columns: .72fr 1.45fr; }
+.project-reverse .project-image { order: 2; }.project-reverse .project-details { order: 1; }
+.project-image { min-width: 0; aspect-ratio: 16 / 9.3; position: relative; display: block; overflow: hidden; background: var(--ink); text-decoration: none; }
+.project-image:after { content: ''; position: absolute; inset: 0; box-shadow: inset 0 0 0 1px rgba(255,255,255,.12); pointer-events: none; }
+.project-image img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: top center; transition: transform .5s ease; }
+.project-image:hover img { transform: scale(1.025); }
+.project-open { position: absolute; right: 18px; bottom: 18px; min-height: 44px; padding: 0 17px; display: flex; align-items: center; gap: 14px; color: white; background: rgba(24,32,28,.9); font-size: 11px; backdrop-filter: blur(8px); }
+.project-index { color: var(--green); text-transform: uppercase; letter-spacing: 1.7px; font-size: 9px; }
+.project-details h3 { margin: 25px 0 20px; font: 500 clamp(32px,3.4vw,49px)/1.05 'Manrope'; letter-spacing: -2.2px; }
+.project-details > p { margin: 0; color: #667069; font-size: 14px; line-height: 1.7; }
+.project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 32px; }
+.project-tags span { padding: 7px 10px; border: 1px solid var(--line); color: #4d554f; font-size: 9px; text-transform: uppercase; letter-spacing: .7px; }
 .statement { background: var(--green); color: white; min-height: 550px; padding: 120px max(42px, calc((100vw - 1196px)/2)); display: flex; flex-direction: column; justify-content: center; position: relative; }
 .statement:before { content: '✦'; color: var(--lime); position: absolute; top: 80px; right: 10%; font-size: 30px; }
 .statement p { max-width: 1030px; margin: 0; font: 400 clamp(48px,6.2vw,84px)/1.05 'Manrope'; letter-spacing: -4px; }
@@ -89,6 +107,7 @@ footer p { margin: 0; text-align: center; color: #667069; font-size: 12px; }
   .signal-card { position: relative; width: min(280px, calc(100vw - 40px)); height: 175px; left: auto; right: auto; bottom: auto; margin: 52px 8px 0 auto; }.signal-visual { height: 120px; }
   .section { padding: 85px 20px; }.section-intro { grid-template-columns: 1fr; gap: 24px; margin-bottom: 60px; }.section-intro h2, .process-heading h2 { letter-spacing: -2px; }.section-intro > p { max-width: 500px; }
   .service { grid-template-columns: 35px 1fr; gap: 12px; padding: 28px 0; }.service-tag { display: none; }.service:hover { padding: 28px 8px; }.service h3 { font-size: 21px; }
+  .work-heading { grid-template-columns: 1fr; gap: 22px; margin-bottom: 52px; }.work-heading h2 { letter-spacing: -2.5px; }.work-heading > p { max-width: 520px; }.project-list { gap: 78px; }.project, .project-reverse { grid-template-columns: 1fr; gap: 32px; }.project-reverse .project-image, .project-reverse .project-details { order: initial; }.project-details { max-width: 600px; }.project-details h3 { margin-block: 18px 15px; }.project-tags { margin-top: 24px; }
   .statement { min-height: 500px; padding: 90px 20px; }.statement p { letter-spacing: -3px; }
   .origin { grid-template-columns: 1fr; gap: 65px; }.origin-art { width: 100%; min-height: 390px; }.garden-rings { width: min(240px, 68vw); height: min(240px, 68vw); }.ring-inner { width: 56%; height: 56%; }.path-horizontal { width: min(310px, 88vw); }.path-vertical { height: 310px; }.origin-copy h2 { letter-spacing: -2px; }.origin-copy > p { font-size: 14px; }
   .process { grid-template-columns: 1fr; gap: 55px; }.step { grid-template-columns: 35px 90px 1fr; gap: 10px; }
@@ -100,6 +119,7 @@ footer p { margin: 0; text-align: center; color: #667069; font-size: 12px; }
   .hero { padding-top: 58px; }.eyebrow { max-width: 270px; line-height: 1.5; }.hero h1 { font-size: clamp(46px,14.4vw,62px); letter-spacing: -3px; }
   .section { padding-block: 72px; }.section-intro { margin-bottom: 48px; }.section-intro h2, .process-heading h2, .origin-copy h2 { font-size: 39px; line-height: 1.06; }
   .service { grid-template-columns: 28px 1fr; }.service p { font-size: 13px; }
+  .work-heading h2 { font-size: 42px; }.project-list { gap: 64px; }.project-image { aspect-ratio: 1.32 / 1; }.project-image img { object-position: top center; }.project-details h3 { font-size: 34px; }.project-details > p { font-size: 13px; }.project-open { right: 12px; bottom: 12px; }
   .statement { min-height: 440px; padding-block: 76px; }.statement:before { top: 45px; font-size: 23px; }.statement p { font-size: 44px; line-height: 1.08; letter-spacing: -2.5px; }
   .origin-art { min-height: 330px; }.origin-art:before { inset: 14px; }.origin-coordinates { left: 28px; bottom: 26px; }.path-vertical { height: 270px; }
   .origin-values { gap: 11px; margin-top: 34px; letter-spacing: 1.2px; }
