@@ -28,7 +28,7 @@ function App() {
         <nav aria-label="Main navigation">
           <a href="#services">Services</a>
           <a href="#process">Process</a>
-          <a href="#about">About</a>
+          <a href="#origin">Our name</a>
         </nav>
         <a className="nav-cta" href="mailto:hello@lumbinilabs.com">Start a project <Arrow /></a>
       </header>
@@ -73,6 +73,29 @@ function App() {
           <span>That’s our standard.</span>
         </section>
 
+        <section className="origin section" id="origin">
+          <div className="origin-art" aria-hidden="true">
+            <div className="garden-rings">
+              <span className="garden-ring ring-outer" />
+              <span className="garden-ring ring-inner" />
+              <span className="garden-center" />
+              <span className="garden-path path-horizontal" />
+              <span className="garden-path path-vertical" />
+            </div>
+            <div className="origin-coordinates">27.4844° N<br />83.2760° E</div>
+          </div>
+          <div className="origin-copy">
+            <div className="kicker">Why Lumbini</div>
+            <h2>Meaningful things<br />begin with purpose.</h2>
+            <p>Our name is inspired by Lumbini, Nepal—a place known across the world for peace, reflection, and beginnings. It reminds us to approach technology with clarity: thoughtful in design, calm in execution, and built to create lasting value.</p>
+            <div className="origin-values">
+              <span>Origin</span><i />
+              <span>Clarity</span><i />
+              <span>Impact</span>
+            </div>
+          </div>
+        </section>
+
         <section className="process section" id="process">
           <div className="process-heading">
             <div className="kicker">How we work</div>
@@ -100,7 +123,7 @@ function App() {
 
       <footer>
         <a className="brand footer-brand" href="#top"><span className="brand-mark">L</span><span>Lumbini Labs</span></a>
-        <p>Thoughtful technology for growing businesses.</p>
+        <p>Inspired by Lumbini. Built for everywhere.</p>
         <div className="footer-links"><a href="mailto:hello@lumbinilabs.com">hello@lumbinilabs.com</a><span>© {new Date().getFullYear()}</span></div>
       </footer>
     </div>
