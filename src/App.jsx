@@ -1,16 +1,17 @@
 import './App.css'
 
 const services = [
-  { number: '01', title: 'Websites that convert', text: 'Fast, polished websites built to turn attention into calls, bookings, and paying customers.', tag: 'Design · Development' },
-  { number: '02', title: 'Smart business systems', text: 'Booking flows, client portals, dashboards, and automations that give your team time back.', tag: 'Automation · Operations' },
-  { number: '03', title: 'AI that does useful work', text: 'Practical AI assistants that answer questions, qualify leads, and support your customers around the clock.', tag: 'AI · Customer experience' },
+  { number: '01', title: 'Websites built for your business', text: 'Clear, mobile-friendly websites that showcase your work and make it easy for customers to get in touch.', tag: 'Design · Development' },
+  { number: '02', title: 'Bookings & customer inquiries', text: 'Appointment requests, contact forms, and connections to scheduling tools so customers can take the next step.', tag: 'Forms · Scheduling' },
+  { number: '03', title: 'Online payments & deposits', text: 'Connect your website to an established payment provider so customers can pay online or leave a deposit when booking.', tag: 'Payment integrations' },
+  { number: '04', title: 'Tools that save you time', text: 'Simple dashboards, email notifications, and connections between your business tools to reduce repetitive work.', tag: 'Dashboards · Automation' },
 ]
 
 const steps = [
   ['Discover', 'We learn how your business works, where it gets stuck, and what growth looks like.'],
   ['Design', 'We shape the right solution and make every interaction clear, useful, and unmistakably yours.'],
   ['Build', 'We create, test, and refine the experience with speed, quality, and no unnecessary complexity.'],
-  ['Grow', 'We stay close after launch—improving, maintaining, and helping the system earn its keep.'],
+  ['Grow', 'Choose ongoing support for updates, fixes, and improvements as your business evolves.'],
 ]
 
 function Arrow() {
@@ -67,6 +68,18 @@ function App() {
                 <span className="service-tag">{service.tag}</span>
               </article>
             ))}
+          </div>
+        </section>
+
+        <section className="support section" id="support" aria-labelledby="support-title">
+          <div className="section-intro">
+            <div className="kicker">Support after launch</div>
+            <h2 id="support-title">A website that<br />keeps up with you.</h2>
+            <p>Optional ongoing support for content changes, bug fixes, and software updates. We can also add features as your needs grow.</p>
+          </div>
+          <div className="support-details">
+            <p>We agree on what your project includes before work begins. Ongoing support is scoped separately, with any hosting, booking, or payment provider fees explained upfront.</p>
+            <a className="primary-button" href="mailto:hello@lumbinilabs.com?subject=Website%20and%20support%20inquiry">Discuss your needs <Arrow /></a>
           </div>
         </section>
 
